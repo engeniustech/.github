@@ -1,0 +1,51 @@
+name: Bug report
+description: Something in this project does not work as described.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Please do not include API keys, passwords, serial numbers, MAC addresses or customer names. Remove them from logs and screenshots before you post.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The release you are using, for example v1.2.0.
+    validations:
+      required: true
+  - type: dropdown
+    id: host
+    attributes:
+      label: AI agent
+      options:
+        - Claude Code
+        - OpenAI Codex
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you asked or did, and what you got back.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+  - type: textarea
+    id: other
+    attributes:
+      label: Anything else
+      description: Operating system, error messages, or anything that might help.

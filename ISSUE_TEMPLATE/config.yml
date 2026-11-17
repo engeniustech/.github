@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: EnGenius Cloud, devices or your network
+    url: https://www.engeniustech.com/contact-us/
+    about: For problems with EnGenius Cloud, EnGenius devices or your own network, please contact EnGenius support. Issues here are only for the projects in this repository.
+  - name: Report a security vulnerability
+    url: https://github.com/engeniustech/.github/blob/main/SECURITY.md
+    about: Please report vulnerabilities privately, not in a public issue.
